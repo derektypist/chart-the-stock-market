@@ -14,3 +14,12 @@ As a user, you can remove stocks.
 
 As a user, you can see changes in real-time when any other user adds or removes a stock.  For this you will need to use Web Sockets.
 
+## Credits
+
+### Content
+
+Taken from FreeCodeCamp.  Accessed from 7 December 2021.
+
+### Acknowledgements
+
+- [FreeCodeCamp](https://www.freecodecamp.org)
