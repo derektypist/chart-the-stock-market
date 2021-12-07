@@ -25,3 +25,4 @@ Taken from FreeCodeCamp.  Accessed from 7 December 2021.
 - [FreeCodeCamp](https://www.freecodecamp.org)
 - [Irina Blumenfield - GitHub Repository](https://github.com/netmagik/Stocks-App)
 - [Alpha Vantage](https://www.alphavantage.co)
+- [Jeremy L Shepherd - GitHub Repository](https://github.com/jeremylshepherd/fcc-stockmarket-app)
