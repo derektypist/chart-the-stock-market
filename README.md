@@ -23,3 +23,4 @@ Taken from FreeCodeCamp.  Accessed from 7 December 2021.
 ### Acknowledgements
 
 - [FreeCodeCamp](https://www.freecodecamp.org)
+- [Irina Blumenfield - GitHub Repository](https://github.com/netmagik/Stocks-App)
