@@ -1,0 +1,77 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Body */
+body {
+  font-family: "Roboto", Arial, Verdana, sans-serif;
+  padding-top: 100px;
+  background-color: #e8b5ce;
+}
+
+/* Center */
+.center {
+  text-align: center;
+}
+
+/* Inline */
+.inline {
+  display: inline-block;
+}
+
+/* Wait */
+.wait {
+  cursor: wait !important;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Stock Canvas */
+#stock-canvas {
+  margin: 20px;
+  min-width: 800px;
+  min-height: 400px;
+  background-color: #e8b5ce;
+}
+
+/* Button */
+.btn {
+  font-family: inherit;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 1px black;
+  display: inline;
+  margin: 0 10px;
+  padding: 6px 8px 4px 8px;
+  background-color: white;
+  color: #009B77;
+  border: 1px solid #009B77;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: lightblue;
+  box-shadow: 0px 0px 1px 1px black;
+}
+
+/* Input */
+input {
+  font-size: 14px;
+  padding: 6px 8px 4px 8px;
+}
+
+/* h3 */
+h3 {
+  margin-top: 10px;
+}
+
+/* h4 */
+h4 {
+  margin-top: 16px;
+}
+
+
