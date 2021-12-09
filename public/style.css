@@ -62,6 +62,7 @@ body {
 input {
   font-size: 14px;
   padding: 6px 8px 4px 8px;
+  font-family: inherit;
 }
 
 /* h3 */
