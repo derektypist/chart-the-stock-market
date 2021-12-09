@@ -4,12 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chart The Stock Market</title>
+  <script src='/socket.io/socket.io.js'></script>
 </head>
 <body class='flex wait center'>
-  <h1 class='inline'>Chart The Stock Market</h1>
-  <h3>Stocks other people add will show up in real time - maximum of 4 stocks - to remove select the label</h3>
-  <!-- Set Up Canvas -->
-  <canvas id='stock-canvas'></canvas>
-  
+  <article>
+    <h1 class='inline'>Chart The Stock Market</h1>
+    <h3>Stocks other people add will show up in real time - maximum of 4 stocks - to remove select the label</h3>
+    <!-- Set Up Canvas -->
+    <canvas id='stock-canvas'></canvas>
+    <article class='flex'>
+      <input id='symbol-input' type='text' placeholder='Enter stock symbol'>
+      <article class='btn' id='get-stock-btn'>Get Stock</article>
+    </article>
+    <h4>Note: Free Tier of the Stock API has a maximum of 5 requests/min and 500 requests/day</h4>
+  </article>
+  <!-- Load Script -->
+  <script src='../public/stocks.js'></script>
 </body>
 </html>
