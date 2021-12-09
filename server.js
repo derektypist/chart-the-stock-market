@@ -5,7 +5,7 @@ const socket = require('socket.io');
 // Index Page (Static HTML)
 app.route('/')
   .get(function (req,res) {
-    res.sendFile(process.cwd + '/views/index.html');
+    res.sendFile(process.cwd() + '/views/index.html');
   });
 
 
