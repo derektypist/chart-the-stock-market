@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
-const socket = require('socket.io');
+
+app.use('/public',express.static(process.cwd() + '/public'));
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 
 // Index Page (Static HTML)
 app.route('/')
