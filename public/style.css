@@ -1,6 +1,13 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* Body */
 body {
   font-family: "Roboto", Arial, Verdana, sans-serif;
@@ -63,6 +70,12 @@ input {
   font-size: 14px;
   padding: 6px 8px 4px 8px;
   font-family: inherit;
+}
+
+/* Selected Interval */
+.selected-interval {
+  background-color: lightblue;
+  box-shadow: 1px 1px 1px 1px black;
 }
 
 /* h3 */
