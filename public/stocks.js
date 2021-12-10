@@ -52,3 +52,36 @@ symbolInput.addEventListener('keyup', function(e) {
   }
 });
 
+// Chart Configuration
+let myChart = new Chart(document.getElementById('stock-canvas'), {
+  type: line,
+  data: {},
+    options: {
+      scales: {
+        xAxes:[{
+          gridLines:{
+            color: '#A09998'
+          },
+          ticks:{
+            fontColor: 'black'
+          }
+        }],
+        yAxes:[{
+          gridLines:{
+            color: '#A09998'
+          },
+          ticks: {
+            fontColor: 'black'
+          },
+          scaleLabel: {
+            display: true,
+            labelString: 'Price (GBP)'
+          }
+        }],
+      },
+      responsive: false,
+      legend: {
+        display: true
+      }
+    }
+});
