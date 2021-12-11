@@ -99,3 +99,12 @@ let myChart = new Chart(document.getElementById('stock-canvas'), {
       }
     }
 });
+
+// From Server
+socket.on('stopLoading', doneLoading);
+
+socket.on('updateStockData', function(newStockData) {
+  stockData = JSON.parse(newStockData);
+  let datasets = [];
+  const colors = []
+});
