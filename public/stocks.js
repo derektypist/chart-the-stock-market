@@ -81,7 +81,21 @@ let myChart = new Chart(document.getElementById('stock-canvas'), {
       },
       responsive: false,
       legend: {
-        display: true
+        display: true,
+        onClick: function(evt,item) {
+          deleteStock(item.text);
+        },
+        onHover: function() {
+          stockCanvas.style.cursor = 'pointer';
+        },
+        labels: {
+          fontColor: 'black'
+        },
+      },
+      hover: {
+        onHover: function() {
+          stockCanvas.style.cursor = 'default';
+        }
       }
     }
 });
