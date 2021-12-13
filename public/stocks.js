@@ -1,7 +1,7 @@
 let stockData = {};
 
 // Socket Connection
-const socket = io.connect('https://chart-the-stock-market.ddxps46.repl.co/');
+const socket = io.connect('https://chart-the-stock-market.freecodecamp.rocks/');
 
 // Query DOM
 const symbolInput = document.getElementById('symbol-input');
