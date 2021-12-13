@@ -106,5 +106,40 @@ socket.on('stopLoading', doneLoading);
 socket.on('updateStockData', function(newStockData) {
   stockData = JSON.parse(newStockData);
   let datasets = [];
-  const colors = []
+  const stockSymbols = Object.keys(stockData);
+  const colors = ['white','black','#666'];
+  let stockDays;
+
+  // Check the length of the keys of stockSymbols
+  if (Object.keys(stockSymbols).length === 0) {
+    myChart.data.datasets = {};
+    myChart.update();
+    doneLoading();
+  } else {
+    stockSymbols.forEach((symbol, i) => {
+      // Create array of Days
+      stockDays = Object.keys(stockData[symbol]);
+      let stockValues = [];
+
+      // Create array of Prices at Close
+      stockDays.forEach((day) => {
+        stockValues.push(stockData[symbol][day]["4. close"]);
+      });
+
+      // Create object to push to datasets - to use in the chart
+      let tempDataset = {};
+      tempDataset.data = stockValues.reverse();
+      tempDataset.label = symbol;
+      tempDataset.borderColor = colors[i];
+      tempDataset.fill = false;
+      datasets.push(tempDataset);
+    });
+
+    // Send data to chart
+    myChart.data.labels = stockDays.reverse();
+    myChart.data.datasets = datasets;
+    myChart.update();
+
+    doneLoading();
+  }
 });
